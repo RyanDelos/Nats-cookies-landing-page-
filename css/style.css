@@ -1,0 +1,40 @@
+.header {
+  background-color: #fff;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0 0.8rem;
+}
+
+.logo_img {
+  height: 15rem;
+}
+
+.navigation {
+  text-decoration: none;
+}
+
+.nav_list {
+  display: flex;
+  font-size: 2rem;
+  gap: 4rem;
+  font-weight: 500;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu,
+.about,
+.contact {
+  text-decoration: none;
+  color: #4f3424;
+}
+
+.menu:hover,
+.about:hover,
+.contact:hover {
+  color: #467397;
+}
