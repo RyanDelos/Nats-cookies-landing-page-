@@ -1,16 +1,20 @@
+/*****************************/
+/* HEADER */
+/*****************************/
+
 .header {
-  background-color: #fff;
   display: block;
+  padding-bottom: 1rem;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  padding: 1.5rem 0 0.8rem;
+  padding-bottom: 0.5rem;
 }
 
 .logo_img {
-  height: 15rem;
+  width: 10%;
 }
 
 .navigation {
@@ -19,8 +23,8 @@
 
 .nav_list {
   display: flex;
-  font-size: 2rem;
   gap: 4rem;
+  font-size: 1.8rem;
   font-weight: 500;
   justify-content: center;
   list-style: none;
@@ -29,12 +33,144 @@
 .menu,
 .about,
 .contact {
-  text-decoration: none;
   color: #4f3424;
+  text-decoration: none;
 }
 
 .menu:hover,
 .about:hover,
 .contact:hover {
   color: #467397;
+}
+
+/*****************************/
+/* HERO SECTION */
+/*****************************/
+
+.hero-section {
+  background-image: url(../img/ube-stacked.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 4.8rem;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 8rem;
+  letter-spacing: 2px;
+}
+
+.hero-paragraph {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.ube {
+  color: #aca1d5;
+}
+
+.hero-container {
+  display: grid;
+  align-items: flex-end;
+  gap: 9.6rem;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.hero-text-container {
+  padding-right: 9.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #f1f9ff;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #5d9aca;
+  color: #f1f9ff;
+}
+
+/*****************************/
+/* MENU SECTION */
+/*****************************/
+
+.menu-section {
+  margin-bottom: 4.8rem;
+}
+.menu-container {
+  margin-bottom: 3.2rem;
+}
+
+.menu-title {
+  text-align: center;
+}
+
+.icon {
+  color: #467397;
+  font-size: 2.4rem;
+  padding-left: 1rem;
+  text-align: center;
+}
+.heart {
+  color: #467397;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.cookie-img {
+  cursor: pointer;
+  transition: all 0.8s;
+  width: 100%;
+}
+
+.cookie-img:hover {
+  transform: scale(1.1);
+}
+
+.img-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snickerdoodle,
+.cookies-and-cream,
+.chocolate-chip {
+  width: 85%;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*****************************/
+/* ABOUT SECTION */
+/*****************************/
+
+.about-section {
+  background-color: #f1f9ff;
+}
+
+.ube-crinkle-header {
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.about-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 4.8rem;
+}
+
+.about-text {
+  font-size: 1.8rem;
 }

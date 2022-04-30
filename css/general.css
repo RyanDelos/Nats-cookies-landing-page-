@@ -35,6 +35,7 @@ Large: 1.8
 #EFE2B2
 - Shades: 
 // light blues
+#5d9aca
 
 //browns
 #4f3424
@@ -63,6 +64,10 @@ Medium: 11px
 
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+margin-bottom: 4.8
+gap: 2.4 ,9.6rem
+padding-left: 9.6rem
 */
 
 html {
@@ -76,7 +81,7 @@ html {
 }
 
 body {
-  background-color: #edf7ff;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -84,10 +89,56 @@ body {
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
 
-h1 {
-  color: #4f3424;
+h1,
+h2,
+h3 {
+  font-family: 'Cookie', cursive;
+  color: #61483a;
 }
 
 h2 {
-  color: #4f3424;
+  font-size: 6.2rem;
+}
+
+h3 {
+  font-size: 5.2rem;
+}
+
+p {
+  color: #61483a;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  border-radius: 50% 10%;
+  color: #5d9aca;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding: 1.6rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 1.6rem;
+}
+
+.grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-center {
+  align-items: center;
 }
