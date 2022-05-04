@@ -24,6 +24,7 @@ Large: 1.8
 --- 02 COLORS
 
 - Primary: #74c0fc
+
 - Tints:
 // light blues
 #f1f9ff
@@ -33,9 +34,12 @@ Large: 1.8
 
 //browns
 #EFE2B2
+#edebe9
+
 - Shades: 
 // light blues
 #5d9aca
+#467397
 
 //browns
 #4f3424
@@ -54,6 +58,7 @@ Large: 1.8
 --- 05 SHADOWS
 
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+ hsla(23, 18%, 38%, 0.15);
 
 --- 06 BORDER-RADIUS
 
@@ -119,6 +124,7 @@ p {
 .btn:visited {
   border: none;
   border-radius: 50% 10%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   color: #5d9aca;
   display: inline-block;
   font-family: inherit;
@@ -141,4 +147,15 @@ p {
 
 .grid-center {
   align-items: center;
+}
+
+.cta-header {
+  text-align: center;
+}
+
+.icon {
+  color: #467397;
+  font-size: 2.4rem;
+  padding-left: 1rem;
+  text-align: center;
 }

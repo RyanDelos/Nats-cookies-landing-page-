@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
 
-    <script defer src="Nats-cookies-landing-page.js"></script>
+    <script defer src="js/script.js"></script>
 
     <title>Nats Cookies Landing Page</title>
   </head>
@@ -31,9 +31,9 @@
       </a>
       <nav class="navigation">
         <ul class="nav_list">
-          <li><a class="menu" href="#"> Menu</a></li>
-          <li><a class="about" href="#"> About</a></li>
-          <li><a class="contact" href="#"> Contact</a></li>
+          <li><a class="menu nav-tab" href="#menu"> Our Cookies</a></li>
+          <li><a class="about nav-tab" href="#about"> Nat's Story</a></li>
+          <li><a class="contact nav-tab" href="#cta"> Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -48,11 +48,21 @@
               </strong>
             </p>
             <a class="btn" href="#">PRE-ORDER NOW</a>
+            <p class="order-disclaimer">
+              *Orders are fulfilled on
+              <a
+                class="instagram-link"
+                href="https://www.instagram.com/_nats_cookies/"
+                target="_blank"
+                >Nat's cookies</a
+              >
+              instagram page via direct message*
+            </p>
           </div>
         </div>
       </section>
 
-      <section class="menu-section">
+      <section class="menu-section" id="menu">
         <h2 class="menu-title">Homemade Cookies</h2>
         <div class="menu-container container grid grid--2-col grid-center">
           <!-- Cookie 1 -->
@@ -67,6 +77,7 @@
               Our fan favorite! A crunchy exterior coated with snowy powdered
               sugar, chewy inside, and a burst of ube flavor in every bite.
             </p>
+            <p class="pricing">6 pieces for $10</p>
           </div>
 
           <div class="img-text-box">
@@ -93,6 +104,7 @@
               Our cookies and cream cookie. Handmade stuffed with
               <strong>real</strong> delicious oreo cookies, crunchy, and sweet.
             </p>
+            <p class="pricing">6 pieces for $8.75</p>
           </div>
 
           <!-- Cookie 3 -->
@@ -105,6 +117,7 @@
               Can't go wrong with the classic. Chewy, soft, and packed with milk
               chocolate chips.
             </p>
+            <p class="pricing">6 pieces for $5</p>
           </div>
 
           <div class="img-text-box">
@@ -132,6 +145,7 @@
               Thick and delicious chocolate crinkle handmade with sweet cocao
               powder, and powdered sugar.
             </p>
+            <p class="pricing">6 pieces for $10</p>
           </div>
 
           <!-- Cookie 5 -->
@@ -144,6 +158,7 @@
               Keep it simple silly! Baked with simple ingredients such as flour,
               creamy butter, and rolled in cinnamon sugar.
             </p>
+            <p class="pricing">6 pieces for $5</p>
           </div>
 
           <div class="img-text-box">
@@ -160,7 +175,7 @@
         </div>
       </section>
 
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container grid grid--2-col grid-center">
           <div class="about-img-box">
             <img
@@ -178,17 +193,177 @@
               It all started in High School during Nat's culinary class, where
               she gained inspiration by a baking project. With the spark of
               inspiration, came action to baking her own cookies, and shared
-              them with her peers. The feedback was amazing! Friends and family
-              suggested to start her own cookie business. Reaching a broader
-              audience Nat uploaded her creation on social media where word
-              spread like wild fire. Nat's cookies was born and is currently
+              them with her peers. The feedback was amazing! Family and friends
+              suggested she start her own cookie business. Aiming to reach a
+              broader audience, Nat uploaded her creation on social media where
+              word spread like wildfire. Nat's cookies was born and is currently
               featured selling her cookies on a food truck today!
             </p>
           </div>
         </div>
       </section>
+
+      <section class="cta-section" id="cta">
+        <div class="cta-container container grid grid--2-col grid-center">
+          <div class="slider-box">
+            <h3 class="cta-header">Follow us on instagram!</h3>
+            <div class="instagram">
+              <a
+                class="instagram-logo icon"
+                href="https://www.instagram.com/_nats_cookies/"
+                target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </div>
+
+            <div class="slider">
+              <div class="slide fade">
+                <img
+                  src="img/socials/assorted cookies.png"
+                  alt="stacked cookies photo"
+                />
+              </div>
+              <div class="slide fade">
+                <img
+                  src="img/socials/oreo-cookie.png"
+                  alt="stacked cookies photo"
+                />
+              </div>
+              <div class="slide fade">
+                <img
+                  src="img/socials/smores-cookie.png"
+                  alt="stacked cookies photo"
+                />
+              </div>
+              <div class="slide fade">
+                <img
+                  src="img/socials/stacked-cookies.png"
+                  alt="stacked cookies photo"
+                />
+              </div>
+              <button class="slider_btn slider_btn-left btn_left">
+                &larr;
+              </button>
+              <button class="slider_btn slider_btn-right btn_right">
+                &rarr;
+              </button>
+              <div class="dots"></div>
+            </div>
+          </div>
+          <div class="form-box">
+            <div class="form-container">
+              <h3 class="form-heading">
+                We would love to hear from you!
+                <span class="icon">
+                  <ion-icon name="chatbox-ellipses"></ion-icon
+                ></span>
+              </h3>
+
+              <form
+                class="cta-form"
+                action="mailto:Natscookies18@gmail.com"
+                method="post"
+                enctype="text/plain"
+                target="_blank"
+              >
+                <div>
+                  <label for="email">Email:</label>
+                  <input
+                    id="email"
+                    type="email"
+                    name="Email:"
+                    placeholder="Email address"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="message">Send us a message:</label> <br />
+                  <textarea name="message" id="message" rows="8"></textarea>
+                  <input
+                    class="send-btn"
+                    value="Submit"
+                    name="message"
+                    type="submit"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="container grid grid-footer">
+        <div class="logo-col">
+          <a class="footer-logo" href="#">
+            <img
+              class="footer-logo_img"
+              src="img/nats_cookies_logo.png"
+              alt="nats cookies logo"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a
+                class="instagram-logo icon"
+                href="https://www.instagram.com/_nats_cookies/"
+                target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a
+                class="instagram-logo icon"
+                href="https://www.tiktok.com/@_nats_cookies415?lang=en"
+                target="_blank"
+                ><ion-icon name="logo-tiktok"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2021</span> by Nat's cookies.
+            All rights reserved.
+          </p>
+          <p class="developed-by">Developed by Ryan Delos Santos</p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="contact-email">
+              <a
+                class="footer-link"
+                href="mailto:Natscookies18@gmail.com"
+                target="_blank"
+                >Natscookies18@gmail.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#about">About Us</a></li>
+            <li><a class="footer-link" href="#menu">Our Cookies</a></li>
+            <li><a class="footer-link" href="#menu">Pricing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Privacy Policy</a></li>
+            <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
