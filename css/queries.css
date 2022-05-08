@@ -1,0 +1,438 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+@media (max-width: 84em) {
+  .hero-container {
+    max-width: 120rem;
+  }
+
+  .hero-title {
+    font-size: 7.4rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .about-text {
+    font-size: 1.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 50%;
+  }
+
+  .nav_list {
+    gap: 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .hero-section {
+    background-size: 100%;
+  }
+
+  .about-text {
+    font-size: 1.6rem;
+  }
+
+  .hero-container {
+    gap: 6.4rem;
+  }
+
+  .hero-text-container {
+    padding-right: 2.4rem;
+  }
+
+  .hero-title {
+    font-size: 7.2rem;
+  }
+
+  .cookie-img {
+    width: 90%;
+  }
+
+  .snickerdoodle,
+  .cookies-and-cream,
+  .chocolate-chip {
+    width: 75%;
+  }
+
+  .ube-crinkle-header {
+    width: 90%;
+  }
+
+  .about-img-box {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .cta-container {
+    padding: 3.2rem;
+  }
+
+  .instagram-logo {
+    font-size: 3.6rem;
+  }
+
+  .instagram-logo:hover {
+    font-size: 4.4rem;
+  }
+
+  .slider-box {
+    max-width: 45rem;
+    height: 45rem;
+  }
+
+  .slide > img {
+    border-radius: 50px;
+    height: 70%;
+    width: 95%;
+    object-fit: cover;
+  }
+
+  .btn_left {
+    left: 8%;
+  }
+
+  .btn_right {
+    right: 8%;
+  }
+
+  .form-box {
+    padding: 4.8rem;
+  }
+
+  .cta-form select,
+  .cta-form input {
+    font-size: 1.6rem;
+    width: 95%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  .footer-nav {
+    gap: 1.8rem;
+  }
+}
+
+/**************************/
+/* BELOW 780px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 49em) {
+  .nav_list {
+    gap: 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.5),
+        rgba(34, 34, 34, 0.5)
+      ),
+      url(../img/ube-stacked.png);
+  }
+  .hero-title,
+  .hero-paragraph,
+  .order-disclaimer {
+    color: #e5d1c0;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+  }
+
+  .hero-container {
+    gap: 4.8rem;
+  }
+
+  .hero-text-container {
+    padding-right: 2.4rem;
+  }
+
+  .hero-title {
+    font-size: 6.4rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.2rem;
+  }
+
+  .order-disclaimer {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .menu-title {
+    font-size: 4.8rem;
+  }
+
+  .cookie-img {
+    width: 90%;
+  }
+
+  .snickerdoodle,
+  .cookies-and-cream,
+  .chocolate-chip {
+    width: 90%;
+  }
+
+  .cookie-name {
+    font-size: 4.8rem;
+  }
+
+  .cookie-description {
+    font-size: 1.2rem;
+  }
+
+  .icon {
+    font-size: 1.6rem;
+  }
+
+  .heart {
+    font-size: 1.6rem;
+  }
+
+  .pricing {
+    font-size: 1.4rem;
+  }
+
+  .ube-crinkle-header {
+    width: 85%;
+  }
+
+  .about-title {
+    font-size: 4.8rem;
+  }
+
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .about-img-box {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .cta-container {
+    padding: 3.2rem;
+  }
+
+  .instagram-logo {
+    font-size: 3.6rem;
+  }
+
+  .instagram-logo:hover {
+    font-size: 4.4rem;
+  }
+
+  .slider-box {
+    max-width: 45rem;
+    height: 45rem;
+  }
+
+  .slide > img {
+    border-radius: 50px;
+    height: 65%;
+    width: 90%;
+    object-fit: cover;
+  }
+
+  .btn_left {
+    left: 12%;
+  }
+
+  .btn_right {
+    right: 12%;
+  }
+
+  .form-box {
+    padding: 2.4rem;
+  }
+
+  .form-heading {
+    font-size: 3.6rem;
+  }
+
+  .cta-form label {
+    font-size: 1.2rem;
+  }
+
+  .cta-form select,
+  .cta-form input {
+    font-size: 1.2rem;
+  }
+
+  .footer-nav {
+    gap: 1.4rem;
+  }
+
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.2rem;
+  }
+
+  .copyright,
+  .developed-by {
+    font-size: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 575px (most phones) */
+/**************************/
+
+@media (max-width: 36em) {
+  .hero-section {
+    height: 43vh;
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 3.6rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.2rem;
+  }
+
+  .order-disclaimer {
+    font-size: 0.8rem;
+  }
+
+  .grid--2-col {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .cookie-name {
+    font-size: 3em;
+  }
+
+  .menu-title {
+    font-size: 3.6rem;
+  }
+
+  .about-img-box {
+    justify-content: center;
+  }
+
+  .ube-crinkle-header {
+    width: 60%;
+  }
+
+  .about-title {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+
+  .slider-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cta-header {
+    font-size: 3.6rem;
+  }
+  .cta-container {
+    padding: 1.2rem;
+  }
+
+  .cta-form select,
+  .cta-form input {
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .grid-footer {
+    grid-template-columns: 1.5fr;
+  }
+
+  .footer-heading {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-logo_img {
+    width: 30%;
+  }
+
+  .social-links {
+    gap: 0;
+  }
+}
+
+/**************************/
+/* Fixing Safari flexbox gap */
+/**************************/
+
+.no-flexbox-gap .nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
