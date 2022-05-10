@@ -44,6 +44,7 @@
 
   .hero-section {
     background-size: 100%;
+    z-index: 5;
   }
 
   .about-text {
@@ -148,6 +149,7 @@
         rgba(34, 34, 34, 0.5)
       ),
       url(../img/ube-stacked.png);
+    height: 50vh;
   }
   .hero-title,
   .hero-paragraph,

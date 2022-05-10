@@ -1,8 +1,13 @@
 'use-strict';
 
-// STICKY NAVIGATION
+// SMOOTHER SCROLLING
+const scroll = new SmoothScroll('a[href*="#"]', { speed: 800 });
 
+// STICKY NAVIGATION
 const sectionHeroEl = document.querySelector('.hero-section');
+const header = document.querySelector('.header');
+const nav = document.querySelector('.main-nav');
+const navHeight = nav.getBoundingClientRect().height;
 
 const obs = new IntersectionObserver(
   function (entries) {
@@ -19,7 +24,7 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: '-80px',
+    rootMargin: `-${navHeight}px`,
   }
 );
 obs.observe(sectionHeroEl);
