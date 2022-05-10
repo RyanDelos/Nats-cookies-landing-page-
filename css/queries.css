@@ -149,7 +149,7 @@
         rgba(34, 34, 34, 0.5)
       ),
       url(../img/ube-stacked.png);
-    height: 50vh;
+    height: 60vh;
   }
   .hero-title,
   .hero-paragraph,
@@ -315,7 +315,7 @@
 
 @media (max-width: 36em) {
   .hero-section {
-    height: 43vh;
+    height: 50vh;
   }
 
   .hero-container {
@@ -398,7 +398,7 @@
   }
 
   .footer-logo_img {
-    width: 30%;
+    width: 25%;
   }
 
   .social-links {
