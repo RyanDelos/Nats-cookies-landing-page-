@@ -66,7 +66,7 @@
 }
 
 /* STICKY NAVIGATION */
-.sticky .header {
+.header.sticky {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -75,7 +75,7 @@
   padding-top: 0;
   padding-bottom: 0;
   background-color: rgba(255, 255, 255, 0.97);
-  z-index: 999;
+  z-index: 20;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
@@ -95,7 +95,7 @@
   display: flex;
   align-items: center;
   height: 100vh;
-  margin-bottom: 4.8rem;
+  margin-bottom: 9.6rem;
   position: relative;
 }
 

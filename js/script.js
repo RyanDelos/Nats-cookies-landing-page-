@@ -46,45 +46,26 @@ allLinks.forEach(function (link) {
 
 // STICKY NAVIGATION
 const sectionHeroEl = document.querySelector('.hero-section');
-const header = document.querySelector('.header');
 const nav = document.querySelector('.main-nav');
-const navHeight = nav.getBoundingClientRect().height;
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
+const header = document.querySelector('.header');
+const headerHeight = header.getBoundingClientRect().height;
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add('sticky');
-    }
+const stickyNav = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
 
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove('sticky');
-    }
-  },
-  {
-    root: null,
-    threshold: 0,
-    rootMargin: `-80px`,
-  }
-);
-obs.observe(sectionHeroEl);
+  if (!entry.isIntersecting) header.classList.add('sticky');
+  else header.classList.remove('sticky');
+};
 
-// const stickyNav = function (entries) {
-//   const [entry] = entries;
-//   // console.log(entry);
+const headerObserver = new IntersectionObserver(stickyNav, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${headerHeight}px`,
+});
 
-//   if (!entry.isIntersecting) nav.classList.add('sticky');
-//   else nav.classList.remove('sticky');
-// };
-
-// const headerObserver = new IntersectionObserver(stickyNav, {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: `-${navHeight}px`,
-// });
-
-// headerObserver.observe(header);
+headerObserver.observe(sectionHeroEl);
 
 // SLIDER FUNCTION
 const slider = function () {
@@ -178,3 +159,23 @@ const yearEl = document.querySelector('.year');
 const currentYear = new Date().getFullYear();
 
 yearEl.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
+// Fixing flexbox gap property missing in some Safari versions
+function checkFlexGap() {
+  var flex = document.createElement('div');
+  flex.style.display = 'flex';
+  flex.style.flexDirection = 'column';
+  flex.style.rowGap = '1px';
+
+  flex.appendChild(document.createElement('div'));
+  flex.appendChild(document.createElement('div'));
+
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  // console.log(isSupported);
+
+  if (!isSupported) document.body.classList.add('no-flexbox-gap');
+}
+checkFlexGap();
