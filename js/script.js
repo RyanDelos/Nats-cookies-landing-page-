@@ -1,7 +1,48 @@
 'use-strict';
 
+///////////////////////////////////////////////////////////
+// Make mobile navigation work
+const btnNavEl = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+
+btnNavEl.addEventListener('click', function () {
+  headerEl.classList.toggle('nav-open');
+});
+
 // SMOOTHER SCROLLING
-const scroll = new SmoothScroll('a[href*="#"]', { speed: 800 });
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const href = link.getAttribute('href');
+
+    // Scroll back to top
+    if (href === '#')
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+
+    // Scroll to other links
+    if (href !== '#' && href.startsWith('#')) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    if (href === 'pages/privacy.html') {
+      window.location.href = 'pages/privacy.html';
+    }
+
+    if (href === 'pages/terms.html') {
+      window.location.href = 'pages/terms.html';
+    }
+
+    // Close mobile naviagtion
+    if (link.classList.contains('nav-link'))
+      headerEl.classList.toggle('nav-open');
+  });
+});
 
 // STICKY NAVIGATION
 const sectionHeroEl = document.querySelector('.hero-section');
@@ -24,10 +65,26 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
-    rootMargin: `-${navHeight}px`,
+    rootMargin: `-80px`,
   }
 );
 obs.observe(sectionHeroEl);
+
+// const stickyNav = function (entries) {
+//   const [entry] = entries;
+//   // console.log(entry);
+
+//   if (!entry.isIntersecting) nav.classList.add('sticky');
+//   else nav.classList.remove('sticky');
+// };
+
+// const headerObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: `-${navHeight}px`,
+// });
+
+// headerObserver.observe(header);
 
 // SLIDER FUNCTION
 const slider = function () {

@@ -16,13 +16,14 @@
       rel="stylesheet"
     />
 
-    <script defer src="js/script.js"></script>
+    <!-- <script defer src="../js/script.js"></script> -->
+    <script defer src="../js/script-sub.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 
     <title>Privacy</title>
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header margin-bottom">
       <a class="logo" href="../index.html">
         <img
           class="logo_img"
@@ -30,17 +31,24 @@
           alt="nats cookies logo"
         />
       </a>
-      <nav class="navigation">
-        <ul class="nav_list">
-          <li><a class="menu nav-tab" href="../index.html"> Our Cookies</a></li>
+      <nav class="main-nav">
+        <ul class="nav-list">
           <li>
-            <a class="about nav-tab" href="../index.html"> Nat's Story</a>
+            <a class="menu nav-link" href="../index.html"> Our Cookies</a>
           </li>
           <li>
-            <a class="contact nav-tab" href="../index.html"> Contact Us</a>
+            <a class="about nav-link" href="../index.html"> Nat's Story</a>
+          </li>
+          <li>
+            <a class="contact nav-link" href="../index.html"> Contact Us</a>
           </li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -352,7 +360,7 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; <span class="year">2021</span> by Nat's cookies.
+            Copyright &copy; <span class="year">2000</span> by Nat's cookies.
             All rights reserved.
           </p>
           <p class="developed-by">Developed by Ryan Delos Santos</p>
