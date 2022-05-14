@@ -67,7 +67,8 @@
 
 /* STICKY NAVIGATION */
 .header.sticky {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   bottom: 0;
   width: 100%;
