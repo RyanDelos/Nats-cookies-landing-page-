@@ -38,6 +38,18 @@ allLinks.forEach(function (link) {
       window.location.href = 'pages/terms.html';
     }
 
+    if (href === 'https://www.instagram.com/_nats_cookies/') {
+      window.open('https://www.instagram.com/_nats_cookies/', 'blank');
+    }
+
+    if (href === 'https://www.tiktok.com/@_nats_cookies415?lang=en') {
+      window.open('https://www.tiktok.com/@_nats_cookies415?lang=en', 'blank');
+    }
+
+    if (href === 'mailto:Natscookies18@gmail.com') {
+      window.open('mailto:Natscookies18@gmail.com', 'blank');
+    }
+
     // Close mobile naviagtion
     if (link.classList.contains('nav-link'))
       headerEl.classList.toggle('nav-open');
