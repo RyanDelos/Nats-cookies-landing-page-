@@ -67,8 +67,8 @@
 
 /* STICKY NAVIGATION */
 .header.sticky {
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky; */
+  position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -240,6 +240,11 @@
 
 .cta-section {
   background-color: #edebe9;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(189, 140, 97, 0.5);
 }
 
 .cta-container {
